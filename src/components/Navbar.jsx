@@ -23,7 +23,7 @@ const Navbar = () => {
           <Link href={'/tentang'} class="mr-5">
             Tentang
           </Link>
-          <Link href={'/'} class="mr-5">
+          <Link href={'/galeri'} class="mr-5">
             Galeri
           </Link>
           <Link href={'/'} class="mr-5">

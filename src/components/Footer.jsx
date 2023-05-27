@@ -1,12 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <footer class="text-gray-600 body-font bg-[#FAFAFA]">
       <div class="container px-5 py-24 mx-auto flex md:justify-between md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <a class="flex title-font text-[#1C2661] font-medium items-center md:justify-start justify-center">
+          <Link
+            href={'/'}
+            className="flex title-font text-[#1C2661] font-medium items-center md:justify-start justify-center"
+          >
             <Image
               src="/inagata.png"
               alt="Inagata Logo"
@@ -15,7 +19,7 @@ const Footer = () => {
               height={24}
               priority
             />
-          </a>
+          </Link>
           <p class="mt-2 text-sm text-gray-500">
             Jelajahi semua pengetahuan dan ilmu yang berguna bersama
             kami, untuk kehidupan yang lebih bermanfaat
@@ -33,9 +37,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">
+                <Link
+                  href={'/galeri'}
+                  className="text-gray-600 hover:text-gray-800"
+                >
                   Galeri
-                </a>
+                </Link>
               </li>
             </nav>
           </div>
@@ -45,9 +52,12 @@ const Footer = () => {
             </h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">
+                <Link
+                  href={'/tentang'}
+                  className="text-gray-600 hover:text-gray-800"
+                >
                   Tentang Kami
-                </a>
+                </Link>
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">
@@ -125,7 +135,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="bg-gray-100">
+      <div class="bg-[#FAFAFA]">
         <div class="container mx-auto py-4 px-5 justify-center flex flex-wrap flex-col sm:flex-row">
           <p class="text-gray-500 text-sm text-center sm:text-left">
             Copyright © 2021. All rights reserved.

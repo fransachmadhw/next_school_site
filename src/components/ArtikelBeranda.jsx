@@ -13,14 +13,17 @@ const ArtikelBeranda = () => {
         </h1>
         <div className="flex flex-wrap -m-4">
           <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex flex-col relative">
-              <div className="rounded-[24px] w-[360px] h-[320px] overflow-hidden relative mb-5">
+            <div class="flex flex-col relative items-center">
+              <div className="rounded-[24px] w-[360px] h-[320px] overflow-visible relative mb-10">
                 <Image
                   src={'/sekolah.png'}
-                  className="object-cover object-center"
+                  className="object-cover object-center rounded-[24px]"
                   alt="profile"
                   fill={true}
                 />
+                <div className="text-white text-[16px] absolute -bottom-5 translate-x-[50%] bg-[#AE39FF] rounded-[100px] py-2 px-6">
+                  12 Desember 2021
+                </div>
               </div>
               <div class="flex-grow">
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
@@ -36,14 +39,17 @@ const ArtikelBeranda = () => {
             </div>
           </div>
           <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex flex-col relative">
-              <div className="rounded-[24px] w-[360px] h-[320px] overflow-hidden relative mb-5">
+            <div class="flex flex-col relative items-center">
+              <div className="rounded-[24px] w-[360px] h-[320px] overflow-visible relative mb-10">
                 <Image
                   src={'/sekolah.png'}
-                  className="object-cover object-center"
+                  className="object-cover object-center rounded-[24px]"
                   alt="profile"
                   fill={true}
                 />
+                <div className="text-white text-[16px] absolute -bottom-5 translate-x-[50%] bg-[#AE39FF] rounded-[100px] py-2 px-6">
+                  12 Desember 2021
+                </div>
               </div>
               <div class="flex-grow">
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
@@ -59,14 +65,17 @@ const ArtikelBeranda = () => {
             </div>
           </div>
           <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex flex-col relative">
-              <div className="rounded-[24px] w-[360px] h-[320px] overflow-hidden relative mb-5">
+            <div class="flex flex-col relative items-center">
+              <div className="rounded-[24px] w-[360px] h-[320px] overflow-visible relative mb-10">
                 <Image
                   src={'/sekolah.png'}
-                  className="object-cover object-center"
+                  className="object-cover object-center rounded-[24px]"
                   alt="profile"
                   fill={true}
                 />
+                <div className="text-white text-[16px] absolute -bottom-5 translate-x-[50%] bg-[#AE39FF] rounded-[100px] py-2 px-6">
+                  12 Desember 2021
+                </div>
               </div>
               <div class="flex-grow">
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
