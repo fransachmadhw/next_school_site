@@ -4,7 +4,7 @@ import Image from 'next/image';
 const ProfilSingkat = () => {
   return (
     <div>
-      <div className="mx-auto container mt-[50px] pb-[100px] flex flex-col gap-4">
+      <div className="mx-auto container mt-[50px] py-[100px] flex flex-col gap-4">
         <h3 className="text-[#4FACF6] text-xl lg:text-[1.5vw]">
           Profil Singkat
         </h3>

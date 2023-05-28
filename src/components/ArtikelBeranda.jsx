@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ArtikelBeranda = () => {
   return (
@@ -26,10 +27,12 @@ const ArtikelBeranda = () => {
                 </div>
               </div>
               <div class="flex-grow">
-                <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
-                  Gotong Royong di Sekolah, Bantu Anak Segera Kembali
-                  ke Sekolah
-                </h2>
+                <Link href={'/artikel/featured'}>
+                  <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
+                    Gotong Royong di Sekolah, Bantu Anak Segera
+                    Kembali ke Sekolah
+                  </h2>
+                </Link>
                 <p class="text-[#2E334E] leading-relaxed text-base">
                   Jika anak kita ditanya apa mimpinya pasti jawabnya
                   saya ingin kembali belajar di sekolah. Saya ingin
@@ -52,10 +55,12 @@ const ArtikelBeranda = () => {
                 </div>
               </div>
               <div class="flex-grow">
-                <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
-                  Gotong Royong di Sekolah, Bantu Anak Segera Kembali
-                  ke Sekolah
-                </h2>
+                <Link href={'/artikel/featured'}>
+                  <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
+                    Gotong Royong di Sekolah, Bantu Anak Segera
+                    Kembali ke Sekolah
+                  </h2>
+                </Link>
                 <p class="text-[#2E334E] leading-relaxed text-base">
                   Jika anak kita ditanya apa mimpinya pasti jawabnya
                   saya ingin kembali belajar di sekolah. Saya ingin
@@ -78,10 +83,12 @@ const ArtikelBeranda = () => {
                 </div>
               </div>
               <div class="flex-grow">
-                <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
-                  Gotong Royong di Sekolah, Bantu Anak Segera Kembali
-                  ke Sekolah
-                </h2>
+                <Link href={'/artikel/featured'}>
+                  <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
+                    Gotong Royong di Sekolah, Bantu Anak Segera
+                    Kembali ke Sekolah
+                  </h2>
+                </Link>
                 <p class="text-[#2E334E] leading-relaxed text-base">
                   Jika anak kita ditanya apa mimpinya pasti jawabnya
                   saya ingin kembali belajar di sekolah. Saya ingin

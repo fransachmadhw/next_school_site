@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const KeunggulanSekolah = () => {
   return (
-    <div className="relative">
+    <div className="relative pt-[100px]">
       <div className="absolute bottom-30 right-0 w-[100px] h-[100px]">
         <Image
           alt="blob1"

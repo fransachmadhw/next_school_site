@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
   return (
-    <header class="text-white body-font bg-[#734192]">
+    <header class="text-white body-font bg-gradient-to-r from-[#734192] to-[#9B309D]">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <Image
@@ -26,10 +26,10 @@ const Navbar = () => {
           <Link href={'/galeri'} class="mr-5">
             Galeri
           </Link>
-          <Link href={'/'} class="mr-5">
+          <Link href={'/artikel'} class="mr-5">
             Artikel
           </Link>
-          <Link href={'/'} class="mr-5">
+          <Link href={'/kontak'} class="mr-5">
             Kontak
           </Link>
         </nav>
