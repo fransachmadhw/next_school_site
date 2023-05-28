@@ -34,10 +34,10 @@ const KeunggulanSekolah = () => {
                   />
                 </div>
                 <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                  <h2 class="text-gray-900 text-lg title-font font-semibold mb-3">
                     Menggunakan Kurikulum Terbaru
                   </h2>
-                  <p class="leading-relaxed text-base">
+                  <p class="leading-relaxed text-base font-normal">
                     Sekolah kami menerapkan kurikulum terbaru saat
                     proses belajar agar siswa mendapatakan materi
                     terbaru sesuai ketentuan
@@ -55,10 +55,10 @@ const KeunggulanSekolah = () => {
                   />
                 </div>
                 <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                  <h2 class="text-gray-900 text-lg title-font mb-3 font-semibold">
                     Efektifitas Waktu Saat Belajar Disekolah
                   </h2>
-                  <p class="leading-relaxed text-base">
+                  <p class="leading-relaxed text-base font-normal">
                     Sekolah kami memiliki waktu belajar yang dirancang
                     agar para siswa tidak jenuh dan dapat menerima
                     pelajaran dengan baik
@@ -76,10 +76,10 @@ const KeunggulanSekolah = () => {
                   />
                 </div>
                 <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                  <h2 class="text-gray-900 text-lg title-font font-semibold mb-3">
                     Penyaluran Bakat dan Minat
                   </h2>
-                  <p class="leading-relaxed text-base">
+                  <p class="leading-relaxed text-base font-normal">
                     Sekolah kami memiliki berbagai macam kegitan
                     akademik maupun non akademik untuk menyalurkan
                     bakat dan minat siswa
@@ -104,7 +104,7 @@ const KeunggulanSekolah = () => {
               <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-[#1C2661]">
                 Tentang Kami
               </h1>
-              <p class="mb-8 leading-relaxed">
+              <p class="mb-8 leading-relaxed font-normal">
                 Sekolah Kami merupakan sekolah informal yang dikelola
                 untuk membantu anak mengembangkan bakat dan
                 kemampuannya. Dengan memberikan kurikulum terbaik agar
@@ -112,8 +112,8 @@ const KeunggulanSekolah = () => {
                 minat tersebut. Sekolah ini didirikan sejak tahun 1989
                 dan terus berkembang hingga saat ini.
               </p>
-              <div class="flex justify-center">
-                <button class="inline-flex text-white bg-[#AE39FF] border-0 py-2 px-6 focus:outline-none rounded-[100px] text-lg">
+              <div class="flex justify-center font-normal">
+                <button class="inline-flex text-white bg-[#AE39FF] border-0 py-2 px-6 focus:outline-none rounded-[100px] text-lg hover:shadow-xl hover:-translate-y-3 transition duration-300 hover:bg-[#bf6dfa]">
                   Baca Selengkapnya
                 </button>
               </div>

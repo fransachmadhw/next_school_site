@@ -11,7 +11,7 @@ const HeroGaleri = () => {
               Galeri
             </h1>
           </div>
-          <p class="mb-8 leading-relaxed">
+          <p class="mb-8 leading-relaxed font-normal">
             Beberapa dokumentasi area sekolah dan kegiatan sekolah
           </p>
         </div>

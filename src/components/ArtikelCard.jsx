@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ArtikelCard = (props) => {
   return (
@@ -14,15 +15,19 @@ const ArtikelCard = (props) => {
           />
         </div>
         <div class="flex-grow">
-          <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
-            {props.title}
-          </h2>
-          <p class="text-[#2E334E] leading-relaxed text-base">
+          <Link href={'/artikel/featured'}>
+            <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
+              {props.title}
+            </h2>
+          </Link>
+          <p class="text-[#2E334E] leading-relaxed font-normal text-base mb-3">
             {props.subtitle}
           </p>
-          <h2 class="text-indigo-500 title-font font-bold mb-3">
-            Baca selengkapnya
-          </h2>
+          <Link href={'/artikel/featured'}>
+            <h2 class="text-indigo-500 title-font font-bold mb-3">
+              Baca selengkapnya
+            </h2>
+          </Link>
         </div>
       </div>
     </div>

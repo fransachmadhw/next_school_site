@@ -13,15 +13,17 @@ const Featured = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 items-start ">
-          <button class="inline-flex text-white bg-[#AE39FF] border-0 py-2 px-6 focus:outline-none rounded-[100px] text-lg">
+          <button class="inline-flex font-normal text-white bg-[#AE39FF] border-0 py-2 px-6 focus:outline-none rounded-[100px] text-lg">
             24 Desember 2021
           </button>
           <h1 className="font-bold leading-[60px] text-lg lg:text-[3vw] text-[#19245F]">
             Gotong Royong di Sekolah, Bantu Anak Segera Kembali ke
             Sekolah
           </h1>
-          <h3 className="text-[#3A3B41]">Penulis : Shinta A.P</h3>
-          <p className="text-[#3A3B41] text-justify leading-10 text-lg lg:text-[1.5vw]">
+          <h3 className="text-[#3A3B41] font-light">
+            Penulis : Shinta A.P
+          </h3>
+          <p className="text-[#3A3B41] font-normal text-justify leading-10 text-lg lg:text-[1.5vw]">
             Jika anak kita ditanya apa mimpinya pasti jawabnya saya
             ingin kembali belajar di sekolah. Saya ingin bertemu
             dengan teman-teman sekelas saya. begitupun sebagian besar

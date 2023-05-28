@@ -17,7 +17,7 @@ const GaleriCard = (props) => {
           <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
             {props.title}
           </h2>
-          <p class="text-[#2E334E] leading-relaxed text-base">
+          <p class="text-[#2E334E] leading-relaxed text-base font-normal">
             {props.subtitle}
           </p>
         </div>

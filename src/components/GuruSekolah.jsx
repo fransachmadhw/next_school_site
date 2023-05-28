@@ -9,10 +9,10 @@ const GuruSekolah = () => {
           Perkenalkan Anggota Sekolah
         </h3>
         <div className="flex justify-between mb-8">
-          <h3 className="text-[#19245F] font-medium text-lg lg:text-[2.5vw]">
+          <h3 className="text-[#19245F] font-bold text-lg lg:text-[2.5vw]">
             Guru & Staff Sekolah
           </h3>
-          <button class="inline-flex text-white bg-[#F2B828] border-0 py-2 px-6 focus:outline-none rounded text-lg">
+          <button class="hover:shadow-lg hover:-translate-y-3 hover:bg-[#fed05b] transition duration-300 inline-flex text-white bg-[#F2B828] border-0 py-2 px-6 focus:outline-none rounded-lg text-lg font-normal">
             Lihat Semua
           </button>
         </div>
@@ -31,7 +31,7 @@ const GuruSekolah = () => {
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                   Jeannete Ong
                 </h2>
-                <p class="text-[#2E334E] leading-relaxed text-base">
+                <p class="text-[#2E334E] font-normal leading-relaxed text-base">
                   Kepala Sekolah
                 </p>
               </div>
@@ -51,7 +51,7 @@ const GuruSekolah = () => {
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                   John Smith
                 </h2>
-                <p class="text-[#2E334E] leading-relaxed text-base">
+                <p class="text-[#2E334E] font-normal leading-relaxed text-base">
                   Kepala Staff
                 </p>
               </div>
@@ -71,7 +71,7 @@ const GuruSekolah = () => {
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                   Lidya M.P
                 </h2>
-                <p class="text-[#2E334E] leading-relaxed text-base">
+                <p class="text-[#2E334E] font-normal leading-relaxed text-base">
                   Guru Matematika
                 </p>
               </div>
@@ -91,7 +91,7 @@ const GuruSekolah = () => {
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                   William
                 </h2>
-                <p class="text-[#2E334E] leading-relaxed text-base">
+                <p class="text-[#2E334E] font-normal leading-relaxed text-base">
                   Guru Fisika
                 </p>
               </div>

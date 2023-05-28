@@ -18,10 +18,10 @@ const GaleriSekolah = () => {
           Galeri
         </h3>
         <div className="flex justify-between mb-8">
-          <h3 className="text-[#19245F] font-medium text-lg lg:text-[2.5vw]">
+          <h3 className="text-[#19245F] font-bold text-lg lg:text-[2.5vw]">
             Dokumentasi Sekolah
           </h3>
-          <button class="inline-flex text-white bg-[#F2B828] border-0 py-2 px-6 focus:outline-none rounded text-lg">
+          <button class="inline-flex text-white font-normal bg-[#F2B828] border-0 py-2 px-6 focus:outline-none rounded-lg text-lg hover:shadow-lg hover:-translate-y-3 hover:bg-[#fed05b] transition duration-300">
             Lihat Semua
           </button>
         </div>
@@ -40,7 +40,7 @@ const GaleriSekolah = () => {
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                   Belajar Mengajar
                 </h2>
-                <p class="text-[#2E334E] leading-relaxed text-base">
+                <p class="text-[#2E334E] font-normal leading-relaxed text-base">
                   Kegiatan belajar mengajar diadakan setiap hari Senin
                   hingga Jum`at
                 </p>
@@ -61,7 +61,7 @@ const GaleriSekolah = () => {
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                   Sharing Session
                 </h2>
-                <p class="text-[#2E334E] leading-relaxed text-base">
+                <p class="text-[#2E334E] font-normal leading-relaxed text-base">
                   Kegiatan menukar pendapat dan pikiran antara guru
                   dan siswa
                 </p>
@@ -82,7 +82,7 @@ const GaleriSekolah = () => {
                 <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                   Presentasi Proyek
                 </h2>
-                <p class="text-[#2E334E] leading-relaxed text-base">
+                <p class="text-[#2E334E] font-normal leading-relaxed text-base">
                   Kegiatan menunjukan hasil pekerjaan dari guru untuk
                   melatih keberanian
                 </p>

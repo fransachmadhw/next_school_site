@@ -20,7 +20,7 @@ const Footer = () => {
               priority
             />
           </Link>
-          <p class="mt-2 text-sm text-gray-500">
+          <p class="mt-2 text-sm text-gray-500 font-normal">
             Jelajahi semua pengetahuan dan ilmu yang berguna bersama
             kami, untuk kehidupan yang lebih bermanfaat
           </p>
@@ -30,7 +30,7 @@ const Footer = () => {
             <h2 class="title-font font-bold text-[#1C2661] tracking-widest text-sm mb-3">
               Informasi
             </h2>
-            <nav class="list-none mb-10">
+            <nav class="list-none mb-10 font-normal">
               <li>
                 <Link
                   href={'/artikel'}
@@ -53,7 +53,7 @@ const Footer = () => {
             <h2 class="title-font font-bold text-[#1C2661] tracking-widest text-sm mb-3">
               Tentang
             </h2>
-            <nav class="list-none mb-10">
+            <nav class="list-none mb-10 font-normal">
               <li>
                 <Link
                   href={'/tentang'}
@@ -76,7 +76,7 @@ const Footer = () => {
             <h2 class="title-font font-bold text-[#1C2661] tracking-widest text-sm mb-3">
               Ikuti Kami
             </h2>
-            <nav class="list-none mb-10">
+            <nav class="list-none mb-10 font-normal">
               <li className="flex gap-3">
                 <a class="text-gray-500">
                   <svg

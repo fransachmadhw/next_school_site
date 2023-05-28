@@ -5,7 +5,7 @@ const ProfilSingkat = () => {
   return (
     <div>
       <div className="mx-auto container mt-[50px] py-[100px] flex flex-col gap-4">
-        <h3 className="text-[#4FACF6] text-xl lg:text-[1.5vw]">
+        <h3 className="text-[#4FACF6] text-xl lg:text-[1.5vw] font-normal">
           Profil Singkat
         </h3>
         <h1 className="font-bold text-[#19245F] text-3xl lg:text-[3vw]">
@@ -13,7 +13,7 @@ const ProfilSingkat = () => {
           <br />
           Insan Mulia Berkarya
         </h1>
-        <p className="text-[#3A3B41] text-xl lg:text-[1.5vw] leading-9">
+        <p className="text-[#3A3B41] text-xl font-normal lg:text-[1.5vw] leading-9">
           Sekolah kami merupakan sekolah informal yang dikelola untuk
           membantu anak mengembangkan bakat dan kemampuannya. Dengan
           memberikan kurikulum terbaik agar anak bisa memilih minat
@@ -31,7 +31,7 @@ const ProfilSingkat = () => {
         <h3 className="text-[#AE39FF] text-center font-medium text-lg lg:text-[20px] mb-5">
           Kenapa Memilih Kami
         </h3>
-        <h3 className="text-[#19245F] text-center font-medium text-lg lg:text-[2.5vw]">
+        <h3 className="text-[#19245F] text-center font-bold text-lg lg:text-[2.5vw]">
           Keunggulan Sekolah Kami
         </h3>
         <section class="text-gray-600 body-font">
@@ -48,10 +48,10 @@ const ProfilSingkat = () => {
                   />
                 </div>
                 <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                  <h2 class="text-gray-900 text-lg title-font font-semibold mb-3">
                     Menggunakan Kurikulum Terbaru
                   </h2>
-                  <p class="leading-relaxed text-base">
+                  <p class="leading-relaxed text-base font-normal">
                     Sekolah kami menerapkan kurikulum terbaru saat
                     proses belajar agar siswa mendapatakan materi
                     terbaru sesuai ketentuan
@@ -69,10 +69,10 @@ const ProfilSingkat = () => {
                   />
                 </div>
                 <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                  <h2 class="text-gray-900 text-lg title-font font-semibold mb-3">
                     Efektifitas Waktu Saat Belajar Disekolah
                   </h2>
-                  <p class="leading-relaxed text-base">
+                  <p class="leading-relaxed text-base font-normal">
                     Sekolah kami memiliki waktu belajar yang dirancang
                     agar para siswa tidak jenuh dan dapat menerima
                     pelajaran dengan baik
@@ -90,10 +90,10 @@ const ProfilSingkat = () => {
                   />
                 </div>
                 <div class="flex-grow">
-                  <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                  <h2 class="text-gray-900 text-lg title-font font-semibold mb-3">
                     Penyaluran Bakat dan Minat
                   </h2>
-                  <p class="leading-relaxed text-base">
+                  <p class="leading-relaxed text-base font-normal">
                     Sekolah kami memiliki berbagai macam kegitan
                     akademik maupun non akademik untuk menyalurkan
                     bakat dan minat siswa

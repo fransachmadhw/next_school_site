@@ -11,7 +11,9 @@ const HeroTentang = () => {
               Tentang Kami
             </h1>
           </div>
-          <p class="mb-8 leading-relaxed">Informasi tentang kami</p>
+          <p class="mb-8 leading-relaxed font-normal">
+            Informasi tentang kami
+          </p>
         </div>
         <div class="lg:max-w-[50vw] lg:mt-[100px] lg:w-full md:w-1/2 w-5/6 relative h-[50vh]">
           <Image

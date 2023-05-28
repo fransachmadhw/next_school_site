@@ -11,7 +11,7 @@ const HeroKontak = () => {
               Hubungi Kami
             </h1>
           </div>
-          <p class="mb-8 leading-relaxed">
+          <p class="mb-8 leading-relaxed font-normal">
             Kontak sekolah kami agar anda bisa terhubung dengan kami
           </p>
         </div>

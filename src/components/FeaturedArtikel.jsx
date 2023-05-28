@@ -17,7 +17,7 @@ const FeaturedArtikel = () => {
           </div>
           <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
             <div class="flex flex-col mb-10 lg:items-start items-center gap-5">
-              <button class="inline-flex text-white bg-[#AE39FF] border-0 py-2 px-6 focus:outline-none rounded-[100px] text-lg">
+              <button class="inline-flex font-normal text-white bg-[#AE39FF] border-0 py-2 px-6 focus:outline-none rounded-[100px] text-lg">
                 24 Desember 2021
               </button>
               <div class="flex-grow ">
@@ -27,7 +27,7 @@ const FeaturedArtikel = () => {
                     Kembali ke Sekolah
                   </h2>
                 </Link>
-                <p class="leading-relaxed text-base">
+                <p class="leading-relaxed text-base font-normal">
                   Jika anak kita ditanya apa mimpinya pasti jawabnya
                   saya ingin kembali belajar di sekolah. Saya ingin
                   bertemu dengan teman-teman sekelas saya. begitupun

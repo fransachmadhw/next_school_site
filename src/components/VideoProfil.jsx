@@ -4,7 +4,7 @@ const VideoProfil = () => {
   return (
     <div className="w-full py-[100px]">
       <div className="mx-auto container">
-        <h3 className="text-[#4FACF6] text-center text-xl lg:text-[1.5vw]">
+        <h3 className="text-[#4FACF6] font-normal text-center text-xl lg:text-[1.5vw]">
           Cuplikan Sekolah
         </h3>
         <h1 className="mb-12 font-bold text-center text-[#19245F] text-3xl lg:text-[3vw]">

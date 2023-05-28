@@ -11,7 +11,7 @@ const HeroArtikel = () => {
               Artikel
             </h1>
           </div>
-          <p class="mb-8 leading-relaxed">
+          <p class="mb-8 leading-relaxed font-normal">
             Artikel menarik seputar pendidikan yang bisa anda baca
             secara gratis
           </p>
