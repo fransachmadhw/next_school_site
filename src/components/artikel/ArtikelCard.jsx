@@ -2,10 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 const ArtikelCard = (props) => {
-  const variantSatu = (Variants = {
+  const variantSatu = {
     hide: {
       opacity: 0,
       y: 150,
@@ -18,7 +18,7 @@ const ArtikelCard = (props) => {
         delay: 0,
       },
     },
-  });
+  };
 
   return (
     <motion.div

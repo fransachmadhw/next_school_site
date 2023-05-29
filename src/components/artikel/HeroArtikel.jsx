@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 const HeroArtikel = () => {
-  const variantSatu = (Variants = {
+  const variantSatu = {
     hide: {
       opacity: 0,
       y: -150,
@@ -17,9 +17,9 @@ const HeroArtikel = () => {
         delay: 0,
       },
     },
-  });
+  };
 
-  const variantDua = (Variants = {
+  const variantDua = {
     hide: {
       opacity: 0,
       y: 150,
@@ -32,7 +32,7 @@ const HeroArtikel = () => {
         delay: 0.5,
       },
     },
-  });
+  };
 
   return (
     <section className="text-white body-font bg-[url('/beranda-background.png')] bg-center bg-[length:100%_100vh] bg-no-repeat h-screen relative">

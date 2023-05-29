@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const HeroTentang = () => {
-  const variantSatu = (Variants = {
+  const variantSatu = {
     hide: {
       opacity: 0,
       y: -150,
@@ -17,9 +17,9 @@ const HeroTentang = () => {
         delay: 0,
       },
     },
-  });
+  };
 
-  const variantDua = (Variants = {
+  const variantDua = {
     hide: {
       opacity: 0,
       y: 150,
@@ -32,7 +32,7 @@ const HeroTentang = () => {
         delay: 0.5,
       },
     },
-  });
+  };
 
   return (
     <section class="text-white body-font bg-[url('/beranda-background.png')] bg-center bg-[length:100%_100vh] bg-no-repeat h-screen relative">

@@ -2,10 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 const FeaturedArtikel = () => {
-  const variantSatu = (Variants = {
+  const variantSatu = {
     hide: {
       opacity: 0,
       y: 150,
@@ -18,7 +18,7 @@ const FeaturedArtikel = () => {
         delay: 0.5,
       },
     },
-  });
+  };
   return (
     <div className="mx-auto container py-[150px] relative">
       <motion.section

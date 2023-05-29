@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 const GaleriCard = (props) => {
-  const variantSatu = (Variants = {
+  const variantSatu = {
     hide: {
       opacity: 0,
       y: 150,
@@ -17,7 +17,7 @@ const GaleriCard = (props) => {
         delay: 0,
       },
     },
-  });
+  };
 
   return (
     <motion.div
