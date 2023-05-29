@@ -1,7 +1,7 @@
-import ArtikelBeranda from '@/components/ArtikelBeranda';
-import GaleriSekolah from '@/components/GaleriSekolah';
-import HeroBeranda from '@/components/HeroBeranda';
-import KeunggulanSekolah from '@/components/KeunggulanSekolah';
+import ArtikelBeranda from '@/components/beranda/ArtikelBeranda';
+import GaleriSekolah from '@/components/beranda/GaleriSekolah';
+import HeroBeranda from '@/components/beranda/HeroBeranda';
+import KeunggulanSekolah from '@/components/beranda/KeunggulanSekolah';
 import Image from 'next/image';
 
 export default function Home() {

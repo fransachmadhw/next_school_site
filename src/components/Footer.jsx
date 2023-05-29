@@ -72,12 +72,12 @@ const Footer = () => {
               </li>
             </nav>
           </div>
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4 text-center">
             <h2 class="title-font font-bold text-[#1C2661] tracking-widest text-sm mb-3">
               Ikuti Kami
             </h2>
-            <nav class="list-none mb-10 font-normal">
-              <li className="flex gap-3">
+            <nav class="list-none mb-10 font-normal text-center md:text-left">
+              <li className="flex justify-center lg:justify-start gap-3">
                 <a class="text-gray-500">
                   <svg
                     fill="currentColor"
@@ -94,7 +94,7 @@ const Footer = () => {
                   namasekolah
                 </a>
               </li>
-              <li className="flex gap-3">
+              <li className="flex gap-3 justify-center lg:justify-start">
                 <a class="ml-3 text-gray-500">
                   <svg
                     fill="currentColor"
@@ -111,7 +111,7 @@ const Footer = () => {
                   namasekolah
                 </a>
               </li>
-              <li className="flex gap-3">
+              <li className="flex gap-3 justify-center lg:justify-start">
                 <a class="ml-3 text-gray-500">
                   <svg
                     fill="none"

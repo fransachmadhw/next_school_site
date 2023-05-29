@@ -1,6 +1,6 @@
-import ArtikelCard from '@/components/ArtikelCard';
-import FeaturedArtikel from '@/components/FeaturedArtikel';
-import HeroArtikel from '@/components/HeroArtikel';
+import ArtikelCard from '@/components/artikel/ArtikelCard';
+import FeaturedArtikel from '@/components/artikel/FeaturedArtikel';
+import HeroArtikel from '@/components/artikel/HeroArtikel';
 import React from 'react';
 
 const Artikel = () => {

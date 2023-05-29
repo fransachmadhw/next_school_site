@@ -1,14 +1,37 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
 
 const GuruSekolah = () => {
+  const variantSatu = (Variants = {
+    hide: {
+      opacity: 0,
+      y: 150,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0,
+      },
+    },
+  });
+
   return (
     <div className="relative bg-[#E9EFFF] py-5">
-      <div className="mx-auto container py-8">
-        <h3 className="text-[#AE39FF] font-medium text-lg lg:text-[20px] mb-5">
+      <motion.div
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={variantSatu}
+        className="mx-auto container py-8"
+      >
+        <h3 className="text-[#AE39FF] font-medium text-lg lg:text-[20px] mb-5 text-center md:text-left">
           Perkenalkan Anggota Sekolah
         </h3>
-        <div className="flex justify-between mb-8">
+        <div className="flex md:flex-row flex-col items-center gap-5 md:gap-0 justify-between mb-8">
           <h3 className="text-[#19245F] font-bold text-lg lg:text-[2.5vw]">
             Guru & Staff Sekolah
           </h3>
@@ -17,7 +40,7 @@ const GuruSekolah = () => {
           </button>
         </div>
         <div className="flex flex-wrap -m-4">
-          <div class="lg:w-1/4 sm:w-1/2 p-4">
+          <div class="lg:w-1/4 sm:w-1/2 p-4 w-full">
             <div class="flex flex-col relative items-center">
               <div className="rounded-[24px] w-[289px] h-[424px] overflow-hidden relative mb-5">
                 <Image
@@ -37,7 +60,7 @@ const GuruSekolah = () => {
               </div>
             </div>
           </div>
-          <div class="lg:w-1/4 sm:w-1/2 p-4">
+          <div class="lg:w-1/4 sm:w-1/2 p-4 w-full">
             <div class="flex flex-col relative items-center">
               <div className="rounded-[24px] w-[289px] h-[424px] overflow-hidden relative mb-5">
                 <Image
@@ -57,7 +80,7 @@ const GuruSekolah = () => {
               </div>
             </div>
           </div>
-          <div class="lg:w-1/4 sm:w-1/2 p-4">
+          <div class="lg:w-1/4 sm:w-1/2 p-4 w-full">
             <div class="flex flex-col relative items-center">
               <div className="rounded-[24px] w-[289px] h-[424px] overflow-hidden relative mb-5">
                 <Image
@@ -77,7 +100,7 @@ const GuruSekolah = () => {
               </div>
             </div>
           </div>
-          <div class="lg:w-1/4 sm:w-1/2 p-4">
+          <div class="lg:w-1/4 sm:w-1/2 p-4 w-full">
             <div class="flex flex-col relative items-center">
               <div className="rounded-[24px] w-[289px] h-[424px] overflow-hidden relative mb-5">
                 <Image
@@ -98,7 +121,7 @@ const GuruSekolah = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

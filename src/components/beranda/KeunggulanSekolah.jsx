@@ -1,7 +1,24 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
 
 const KeunggulanSekolah = () => {
+  const variantSatu = (Variants = {
+    hide: {
+      opacity: 0,
+      y: 150,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0,
+      },
+    },
+  });
+
   return (
     <div className="relative pt-[100px]">
       <div className="absolute bottom-30 right-0 w-[100px] h-[100px]">
@@ -13,17 +30,23 @@ const KeunggulanSekolah = () => {
           height={100}
         />
       </div>
-      <div className="mx-auto container py-5 relative">
+      <div className="mx-auto container py-5 relative text-center md:text-left">
         <h3 className="text-[#AE39FF] font-medium text-lg lg:text-[20px] mb-5">
           Kenapa Memilih Kami
         </h3>
         <h3 className="text-[#19245F] font-medium text-lg lg:text-[2.5vw]">
           Keunggulan Sekolah Kami
         </h3>
-        <section class="text-gray-600 body-font">
+        <motion.section
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={variantSatu}
+          className="text-gray-600 body-font"
+        >
           <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-              <div class="p-4 md:w-1/3 flex flex-col text-left">
+              <div class="p-4 md:w-1/3 flex flex-col text-center md:text-left items-center md:items-start">
                 <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#8362C2] mb-5 flex-shrink-0">
                   <Image
                     alt="book"
@@ -44,7 +67,7 @@ const KeunggulanSekolah = () => {
                   </p>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 flex flex-col text-left">
+              <div class="p-4 md:w-1/3 flex flex-col text-center md:text-left items-center md:items-start">
                 <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#F2B828] text-indigo-500 mb-5 flex-shrink-0">
                   <Image
                     alt="clock"
@@ -65,7 +88,7 @@ const KeunggulanSekolah = () => {
                   </p>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 flex flex-col text-left">
+              <div class="p-4 md:w-1/3 flex flex-col text-center md:text-left items-center md:items-start">
                 <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#4FACF6] text-indigo-500 mb-5 flex-shrink-0">
                   <Image
                     alt="pen-tool"
@@ -88,8 +111,14 @@ const KeunggulanSekolah = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section class="text-gray-600 body-font">
+        </motion.section>
+        <motion.section
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={variantSatu}
+          className="text-gray-600 body-font"
+        >
           <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
               <Image
@@ -119,7 +148,7 @@ const KeunggulanSekolah = () => {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
       </div>
     </div>
   );

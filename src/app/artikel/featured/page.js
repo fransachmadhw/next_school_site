@@ -1,22 +1,51 @@
-import HeroFeatured from '@/components/HeroFeatured';
+'use client';
+import HeroFeatured from '@/components/artikel/HeroFeatured';
 import React from 'react';
 import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
 
 const Featured = () => {
+  const variantSatu = (Variants = {
+    hide: {
+      opacity: 0,
+      y: 150,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0,
+      },
+    },
+  });
+
   return (
     <div className="bg-white">
       <HeroFeatured />
-      <div className="mx-auto container py-[70px]">
-        <div className="flex justify-center">
-          <div className="relative rounded-[20px] overflow-hidden w-[90%] h-[90vh] mb-[100px]">
+      <div className="mx-auto container py-[70px] px-5 lg:px-0">
+        <motion.div
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={variantSatu}
+          className="flex justify-center"
+        >
+          <div className="relative rounded-[20px] overflow-hidden w-[90%] lg:h-[90vh] h-[350px] mb-[30px] lg:mb-[100px]">
             <Image alt="featured" src={'/sekolah.png'} fill={true} />
           </div>
-        </div>
-        <div className="flex flex-col gap-4 items-start ">
+        </motion.div>
+        <motion.div
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={variantSatu}
+          className="flex flex-col gap-4 items-center md:items-start "
+        >
           <button class="inline-flex font-normal text-white bg-[#AE39FF] border-0 py-2 px-6 focus:outline-none rounded-[100px] text-lg">
             24 Desember 2021
           </button>
-          <h1 className="font-bold leading-[60px] text-lg lg:text-[3vw] text-[#19245F]">
+          <h1 className="font-bold lg:leading-[60px] text-lg lg:text-[3vw] text-[#19245F] text-center lg:text-left ">
             Gotong Royong di Sekolah, Bantu Anak Segera Kembali ke
             Sekolah
           </h1>
@@ -86,7 +115,7 @@ const Featured = () => {
              hadir demi mewujudkan pembelajaran tatap muka meskipun
             terbatas.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

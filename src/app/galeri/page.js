@@ -1,7 +1,7 @@
-import HeroGaleri from '@/components/HeroGaleri';
+import HeroGaleri from '@/components/galeri/HeroGaleri';
 import React from 'react';
 import Image from 'next/image';
-import GaleriCard from '@/components/GaleriCard';
+import GaleriCard from '@/components/galeri/GaleriCard';
 
 const Galeri = () => {
   const dataGaleri = [

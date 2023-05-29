@@ -1,11 +1,34 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
 
 const FormKontak = () => {
+  const variantSatu = (Variants = {
+    hide: {
+      opacity: 0,
+      y: 150,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0,
+      },
+    },
+  });
+
   return (
-    <section className="text-gray-600 body-font relative">
+    <motion.section
+      initial="hide"
+      whileInView="show"
+      exit="hide"
+      variants={variantSatu}
+      className="text-gray-600 body-font relative mt-[-100px] sm:mt-0"
+    >
       <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-[45%] md:w-1/2 bg-transparent rounded-lg overflow-hidden sm:mr-10 px-10 py-5 flex flex-col items-start gap-5 relative">
+        <div className="lg:w-[45%] md:w-1/2 w-full bg-transparent rounded-lg overflow-hidden sm:mr-10 px-10 py-5 flex flex-col items-start gap-5 relative">
           <div className="flex gap-5 items-center">
             <div class="w-20 h-20 flex items-center justify-center rounded-full bg-[#8362C2]">
               <Image
@@ -105,7 +128,7 @@ const FormKontak = () => {
           </button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

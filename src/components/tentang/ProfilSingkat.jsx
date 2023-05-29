@@ -1,10 +1,33 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
 
 const ProfilSingkat = () => {
+  const variantSatu = (Variants = {
+    hide: {
+      opacity: 0,
+      y: 150,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0,
+      },
+    },
+  });
+
   return (
     <div>
-      <div className="mx-auto container mt-[50px] py-[100px] flex flex-col gap-4">
+      <motion.div
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={variantSatu}
+        className="mx-auto container mt-[50px] py-[100px] flex flex-col gap-4 px-5 md:px-0 text-center md:text-left"
+      >
         <h3 className="text-[#4FACF6] text-xl lg:text-[1.5vw] font-normal">
           Profil Singkat
         </h3>
@@ -26,8 +49,14 @@ const ProfilSingkat = () => {
           semangat belajar yang tinggi kami berharap bisa terus
           meghasilkan siswa-siswa lulusan terbaik dari sekolah ini.
         </p>
-      </div>
-      <div className="mx-auto container py-5 relative">
+      </motion.div>
+      <motion.div
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={variantSatu}
+        className="mx-auto container py-5 relative"
+      >
         <h3 className="text-[#AE39FF] text-center font-medium text-lg lg:text-[20px] mb-5">
           Kenapa Memilih Kami
         </h3>
@@ -37,7 +66,7 @@ const ProfilSingkat = () => {
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-              <div class="p-4 md:w-1/3 flex flex-col text-left">
+              <div class="p-4 md:w-1/3 flex flex-col text-center md:text-left items-center md:items-start">
                 <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#8362C2] mb-5 flex-shrink-0">
                   <Image
                     alt="book"
@@ -58,7 +87,7 @@ const ProfilSingkat = () => {
                   </p>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 flex flex-col text-left">
+              <div class="p-4 md:w-1/3 flex flex-col text-center md:text-left items-center md:items-start">
                 <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#F2B828] text-indigo-500 mb-5 flex-shrink-0">
                   <Image
                     alt="clock"
@@ -79,7 +108,7 @@ const ProfilSingkat = () => {
                   </p>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 flex flex-col text-left">
+              <div class="p-4 md:w-1/3 flex flex-col text-center md:text-left items-center md:items-start">
                 <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-[#4FACF6] text-indigo-500 mb-5 flex-shrink-0">
                   <Image
                     alt="pen-tool"
@@ -103,7 +132,7 @@ const ProfilSingkat = () => {
             </div>
           </div>
         </section>
-      </div>
+      </motion.div>
     </div>
   );
 };

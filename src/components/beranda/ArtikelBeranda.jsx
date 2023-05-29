@@ -1,10 +1,33 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion, Variants } from 'framer-motion';
 
 const ArtikelBeranda = () => {
+  const variantSatu = (Variants = {
+    hide: {
+      opacity: 0,
+      y: 150,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        delay: 0,
+      },
+    },
+  });
+
   return (
-    <div className="relative p-5 mt-[70px] pb-[200px]">
+    <motion.div
+      initial="hide"
+      whileInView="show"
+      exit="hide"
+      variants={variantSatu}
+      className="relative p-5 mt-[70px] pb-[200px]"
+    >
       <div className="mx-auto container">
         <h2 className="text-center text-[#4FACF6] font-normal text-2xl mb-3">
           Artikel Seputar Pendidikan
@@ -26,7 +49,7 @@ const ArtikelBeranda = () => {
                   12 Desember 2021
                 </div>
               </div>
-              <div class="flex-grow">
+              <div class="flex-grow text-center md:text-left">
                 <Link href={'/artikel/featured'}>
                   <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                     Gotong Royong di Sekolah, Bantu Anak Segera
@@ -54,7 +77,7 @@ const ArtikelBeranda = () => {
                   12 Desember 2021
                 </div>
               </div>
-              <div class="flex-grow">
+              <div class="flex-grow text-center md:text-left">
                 <Link href={'/artikel/featured'}>
                   <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                     Gotong Royong di Sekolah, Bantu Anak Segera
@@ -82,7 +105,7 @@ const ArtikelBeranda = () => {
                   12 Desember 2021
                 </div>
               </div>
-              <div class="flex-grow">
+              <div class="flex-grow text-center md:text-left">
                 <Link href={'/artikel/featured'}>
                   <h2 class="text-gray-900 text-lg lg:text-[1.5vw] title-font font-bold mb-3">
                     Gotong Royong di Sekolah, Bantu Anak Segera
@@ -99,7 +122,7 @@ const ArtikelBeranda = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
